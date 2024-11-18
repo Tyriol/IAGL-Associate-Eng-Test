@@ -16,6 +16,7 @@ async function loadTodos() {
     // If file doesn't exist, create it with default data
     if (error.code === "ENOENT") {
       await saveTodos(defaultTodoList);
+      console.log("Todo list created successfully");
       return defaultTodoList;
     }
     throw error;
