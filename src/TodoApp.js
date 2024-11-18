@@ -7,8 +7,8 @@ export default function TodoApp() {
   return (
     <div className="todo-app">
       <h1>Todo List</h1>
-      <TodoList />
       <TodoForm />
+      <TodoList />
     </div>
   );
 }
