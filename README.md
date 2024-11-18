@@ -24,26 +24,29 @@ Please write code as you would for it to be production ready.
 
 While it isn't required to make the front end look slick and well designed we would appreciate any effort that you put into UI design and UX.
 
-
 ## Starting the application
 
 - Backend: (In the backend folder)
+
 ```shell
 npm install
 npm start # Start the server in the 9091 port
 ```
 
 - Frontend: (In the root folder)
+
 ```shell
 npm install
 npm start # Starts the app in http://localhost:3000
 ```
 
+This will create a todo.json file in the backend `./repository` directory that you can then start adding new todo's to.
+
 ## Backend
 
 You can find it in the `/backend` directory. It's built in Express and stores the TODO items in memory.
 
-* GET /api/todo
+- GET /api/todo
 
 ![get todo picture](docs/get_todo_endpoint.png "Get TODO")
 
@@ -52,6 +55,5 @@ You can find it in the `/backend` directory. It's built in Express and stores th
 You can find it in the `src` folder. It has been build with React and Redux. The list of todos are fetched asynchronously from the backend via Redux-thunk.
 
 You can assume the backend is running under `http://localhost:9091/api/todo`
-
 
 ![get todo FE](docs/get_todo_frontend.png "GET todo frontend")
